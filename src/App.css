@@ -1,0 +1,51 @@
+/* Estilo general para que no quede todo en blanco */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgb(141, 132, 132);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Tarjeta de perfil */
+.tarjeta {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  background-color: #b9b9b9;
+}
+
+/* Botón */
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.btn:hover {
+  background-color: #4588da;
+}
+
+/* Lista de habilidades */
+ul {
+  list-style-position: inside;
+}
+
+li {
+  margin-bottom: 5px;
+}
