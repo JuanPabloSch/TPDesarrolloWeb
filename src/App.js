@@ -1,7 +1,5 @@
-// Este es el componente principal.
-// Aquí juntamos todo: Titulo, TarjetaDePerfil y ListaDeHabilidades.
 import React, { useState } from 'react';
-import './App.css'; // Importamos estilos
+import './App.css';
 import Titulo from './components/Titulo';
 import TarjetaDePerfil from './components/TarjetaDePerfil';
 import ListaDeHabilidades from './components/ListaDeHabilidades';
@@ -14,31 +12,30 @@ function App() {
         edad: 41,
     };
 
-  // Estado que controla si la lista se muestra o no
+  // Muestra o no la lista de habilidades
     const [mostrarLista, setMostrarLista] = useState(true);
 
-  // Función para alternar entre mostrar y ocultar la lista
+  // Función que oculta o muestra la lista
     const toggleLista = () => {
         setMostrarLista(!mostrarLista);
     };
 
-  // Arreglo de habilidades a renderizar
+  // Arreglo de habilidades
     const habilidades = ['Reparación de equipos electrónicos', 'Uso de instrumentos de medición', 'Soldadura y montaje de circuitos', 'Mantenimiento preventivo y correctivo'];
 
     return (
         <div className="app-container">
-        {/* Componente con contenido estático */}
+        {/* contenido estático */}
         <Titulo />
 
-      {/* Componente que recibe props */}
+      {/* recibe props */}
         <TarjetaDePerfil usuario={usuario} />
 
-      {/* Botón que controla la visibilidad de la lista */}
         <button className="btn" onClick={toggleLista}>
             {mostrarLista ? 'Ocultar Habilidades' : 'Mostrar Habilidades'}
         </button>
 
-      {/* Renderizado condicional: la lista solo aparece si mostrarLista es true */}
+      {/* Condicional la lista aparece si mostrarLista es true */}
         {mostrarLista && <ListaDeHabilidades habilidades={habilidades} />}
     </div>
     );

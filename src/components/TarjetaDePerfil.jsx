@@ -1,5 +1,4 @@
-// Este componente muestra los datos de un usuario.
-// Recibe "usuario" como prop desde App.js.
+// Este componente muestra los datos de un usuario que recibe como prop desde App.js.
 import React from 'react';
 
 const TarjetaDePerfil = ({ usuario }) => {

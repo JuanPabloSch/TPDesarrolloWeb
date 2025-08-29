@@ -1,5 +1,4 @@
 // Este componente muestra un título estático.
-// No recibe props porque su contenido es fijo.
 import React from 'react';
 
 const Titulo = () => {
